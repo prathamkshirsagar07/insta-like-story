@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background-image: url(wr.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+    overflow: hidden;
+}
+#like-big{
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    scale: 5;
+    opacity: 0;
+    transform: translate(-50%,-50%)
+
+}
+#full-scr{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;  
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+}
+#progress{
+    height: 5px;
+    width: 100%;
+    background-color: rgba(231, 227, 227, 0.42);
+}
+#growth{
+    height: 100%;
+    width: 50%;
+    border-radius: 30px;
+    background-color: #e7dddd  ;
+}
+
+#storiyan{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid cornsilk;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #cc7fa2;
+    }
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    display: inline-block;
+    margin: 0 2px;
+    height: 80px;
+    width: 80px;
+    border: 2px solid rgb(223, 61, 93);
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.insta-profile{
+    position: relative;
+    display: flex;
+    background-color: white;
+    height: 12%;
+}
+.insta-profile img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.insta-profile .name{
+    position: absolute;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size:20px;
+}
+.insta-profile svg{
+    position: absolute;
+}
+.insta-profile p{
+    position: absolute;
+    left: 22%;
+    bottom: 20%;
+    font-family: sans-serif;
+}
+.like-elem{
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 65%;
+    display: flex;
+}
+
+.like-elem svg{
+    gap: 5px;
+    padding: 10px;
+    width: 40px;
+    height: 30%;
+}
+
+#like-btns{
+    fill: rgb(49, 44, 44);
+}
